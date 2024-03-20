@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        img{
+            border: 1px solid #cdcdcd;
+            cursor: pointer;
+            width: 150px;
+            height: 89px;
+        }
+        img:hover{
+            border-color: #fbff01;
+        }
+        img.alt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Desafio do Mapa</h1>
+        <p>Agora chegou a hora de treinar um pouco o uso de imagens, parágrafos e quebras de linhas.</p>
+        <img src="imagens/mapa01.png" alt="Mapa-Parte-01.img">
+        <img src="imagens/mapa02.png" alt="Mapa-Parte-02.img">
+        <img src="imagens/mapa03.png" alt="Mapa-Parte-03.img">
+        <br>
+        <img src="imagens/mapa04.png" alt="Mapa-Parte-04.img">
+        <img src="imagens/mapa05.png" alt="Mapa-Parte-05.img">
+        <img src="imagens/mapa06.png" alt="Mapa-Parte-06.img">
+        <br>
+        <img src="imagens/mapa07.png" alt="Mapa-Parte-07.img">
+        <img src="imagens/mapa08.png" alt="Mapa-Parte-08.img">
+        <img src="imagens/mapa09.png" alt="Mapa-Parte-09.img">
+    </div>
+    <script>
+        const Imagens = [...document.querySelectorAll("img")];
+        Imagens.map((el,i)=>{
+            el.addEventListener("mouseenter",()=>{
+                el.src = (`imagens/Hover/${i+1}.png`);
+            })
+            el.addEventListener("mouseout",()=>{
+                el.src = (`imagens/mapa0${i+1}.png`);
+            })
+        })
+    </script>
+</body>
+</html>

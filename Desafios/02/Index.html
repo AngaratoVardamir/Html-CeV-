@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>02</title>
     <link rel="stylesheet" href="../style.css">
+    <link id="Icon" rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Desafio das Imagens</h1>
+    <div>
+        <h1>Desafio das Imagens</h1>
+        <p>Inserir Imagens em HTML é muito simpres, Tanto no conteúdo quanto lá em cima como ícone de Favoritos</p>
+        <img style="width: 150px;" src="imagens/github-p.png" alt="GitHub.img">
+    </div>
+    <button>Mudar Img</button>
+    <script>
+        const botao = document.querySelector("button");
+        const imagen = document.querySelector("img");
+        const icon = document.querySelector("#Icon")
+
+        var count = 1;
+        const ListadeImg = ["imagens/github-p.png","imagens/jetpacktocat.png","imagens/orderedlistocat.png","imagens/Professortocat_v2.png","imagens/Fintechtocat.png"];
+
+        const ListadeIcon = ["imagens/favicon.ico","imagens/jetpacktocat.ico","imagens/orderedlistocat.ico","imagens/Professortocat_v2.icon","imagens/Fintechtocat.ico"];
+
+
+        botao.addEventListener("click",(cl)=>{ 
+            alert("Imagen Trocanda");
+            imagen.src = (ListadeImg[count]);
+            icon.href = (ListadeIcon[count]);
+
+            if (ListadeImg.length-1 <= count){
+                function meno(){
+                    count = 0;
+                }
+                meno()
+            }
+            else{
+                function mais(){
+                    count++;
+                }
+                mais()
+            }
+        })
+    </script>
 </body>
 </html>
