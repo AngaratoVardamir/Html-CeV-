@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+    <link rel="shortcut icon" href="../02/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body{
+            height: 150vh;
+        }
+        li{
+            cursor: pointer;
+        }
+        li:hover{
+            color: #fbff01;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Meus emojis favoritos</h1>
+        <h2>Carinhas</h2>
+        <ul>
+            <li>
+                &#x1F913 Código U+1F913
+            </li>
+            <li>
+                &#x1F92F Código U+1F92F
+            </li>
+            <li>
+                &#x1F979 Código U+1F979
+            </li>
+        </ul>
+        <h2>Mãos</h2>
+        <ul>
+            <li>
+                &#x1F596 Código U+1F596
+            </li>
+            <li>
+                &#x1F91D Código U+1F91D
+            </li>
+            <li>
+                &#x1F44D Código U+1F44D
+            </li>
+        </ul>
+        <h2>Animais</h2>
+        <ul>
+            <li>
+                &#x1F431 Código U+1F431
+            </li>
+            <li>
+                &#x1F436 Código U+1F436
+            </li>
+            <li>
+                &#x1F981 Código U+1F981
+            </li>
+        </ul>
+        <h2>Esportes</h2>
+        <ul>
+            <li>
+                &#x1F3D3 Código U+1F3D3
+            </li>
+            <li>
+                &#x26BD Código U+26BD
+            </li>
+            <li>
+                &#x1F94A Código U+1F94A
+            </li>
+        </ul>
+        <h2>Comidas</h2>
+        <ul>
+            <li>
+                &#x1F354 Código U+1F354
+            </li>
+            <li>
+                &#x1F37F Código U+1F37F
+            </li>
+            <li>
+                &#x1F36A Código U+1F36A
+            </li>
+        </ul>
+        <h2>Objetos</h2>
+        <ul>
+            <li>
+                &#x1F4BB Código U+1F4BB
+            </li>
+            <li>
+                &#x1F4F7 Código U+1F4F7
+            </li>
+            <li>
+                &#x1F4A1 Código U+1F4A1
+            </li>
+        </ul>
+    </div>
+    <script>
+        const Emojis = [...document.querySelectorAll("li")];
+
+        const lista_nomes = ["&#x1F913 Carinha Nerd","&#x1F92F cabeça explodindo","&#x1F979 carinha derretendo","&#x1F596 Saudação vulcana","&#x1F91D aperto de mãos","&#x1F44D Joinha","&#x1F431 cara de gato","&#x1F436 Cara de cão","&#x1F981 rosto de um leão","&#x1F3D3 Pingue-Pongue","&#x26BD Bola De Futebol","&#x1F94A luvas de boxe","&#x1F354 hamburger","&#x1F37F Pipoca","&#x1F36A biscoito","&#x1F4BB laptop","&#x1F4F7 Câmera","&#x1F4A1 Lâmpada"];
+
+        // covertendo em Strong
+        Emojis.map((el,id)=>{
+            let novo = el.innerHTML
+            el.innerHTML = (`<strong>${novo}</strong>`);
+            //Evento de click
+            el.addEventListener("click",()=>{
+                el.innerHTML = (`<strong>${lista_nomes[id]}</strong>`);
+                el.style.color = ("#cdcdcd");
+
+                setTimeout(() => {
+                    el.innerHTML = (`<li><strong>${novo}</strong></li>`);
+                    el.style.color = ("#af01ff"); 
+                },2000)
+            });    
+        })
+    </script>
+</body>
+</html>
