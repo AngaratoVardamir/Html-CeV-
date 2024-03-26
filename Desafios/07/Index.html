@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07</title>
+    <span id="Estilo_Css">
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            body{
+                height: 110vh;
+            }
+            input{
+                width: 36px;
+            }
+            #css{
+                display: flex;
+            }
+            button{
+                font-size: 0.9em;
+            }
+        </style>
+    </span>
+</head>
+<body>
+    <Span>Ligar Css?</Span>
+    <span id="css">
+        <button id="Sim">Sim</button>
+        <button id="Não">Não</button>
+    </span>
+    <div>
+        <h1>Imagem Flexível</h1>
+        <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua Janela para Aproveitar a Melhor experiência🤯</p>
+        <picture>
+            <source media="(max-width: 753px)" srcset="imagens/paisagem-p.png">
+            <source media="(max-width: 1210px)" srcset="imagens/paisagem-m.png">
+            <img src="imagens/paisagem-g.png" alt="paisagem">
+        </picture>
+    </div>
+</body>
+</html>
+<script>
+    const Estilo = document.querySelector("#Estilo_Css");
+    const BotãoSim = document.querySelector("#Sim");
+    const BotãoNão = document.querySelector("#Não");
+
+    const Original = (Estilo.innerHTML);
+    console.log(Original);
+
+
+    BotãoNão.addEventListener("click",()=>{
+        Estilo.innerHTML = ("");
+    })
+
+    BotãoSim.addEventListener("click",()=>{
+        Estilo.innerHTML = (Original);
+    })
+</script>

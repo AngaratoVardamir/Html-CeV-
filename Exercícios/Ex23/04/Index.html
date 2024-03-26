@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23-04</title>
+    <link rel="stylesheet" href="../Style.css">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            height: 400px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            border: 1px solid black;
+            
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .Mulher{
+            background-color: rgba(255, 192, 203, 0.76);
+        }
+        .Homem{
+            background-color: rgba(192, 248, 255, 0.76);
+        }
+        .Nomes{
+            background-color: rgba(209, 192, 255, 0.473);
+        }
+        .Grupos{
+            background-color: rgba(0, 0, 0, 0.473);
+        }
+        .Filmes{
+            background-color: rgba(204, 0, 255, 0.473);
+        }
+        .Total{
+            background-image: linear-gradient(to right, rgba(204, 0, 255, 0.473), rgba(0, 0, 0, 0.473),rgba(192, 248, 255, 0.76),rgba(255, 192, 203, 0.76));
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <h3>Filmes Favoritos</h3>
+    <table>
+        <thead>
+            <tr>
+                <th class="Grupos">
+                    Grupos
+                </th>
+                <th class="Nomes" scope="col">
+                    Nomes
+                </th>
+                <th colspan="3" class="Filmes">
+                    Filmes
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="Mulher">
+                <th scope="rowgroup" rowspan="3" class="Grupos">
+                    Mulheres
+                </th>
+                <td class="Nomes">Ana Maria Santos</td>
+                <td class="Filmes">Alien</td>
+                <td class="Filmes">Rambo</td>
+                <td class="Filmes">Vingadores</td>
+            </tr>
+            <tr class="Mulher">
+                <td class="Nomes">Beatriz Souza</td>
+                <td class="Filmes">Hulk</td>
+                <td class="Filmes">Inception</td>
+                <td class="Filmes">Batman</td>
+            </tr>
+            <tr class="Mulher">
+                <td class="Nomes">Cláudia Melo</td>
+                <td class="Filmes">Oblivion</td>
+                <td class="Filmes">Matrix</td>
+                <td class="Filmes">Big Hero</td>
+            </tr>
+            <tr class="Homem">
+                <th scope="rowgroup" rowspan="3" class="Grupos">
+                    Homens
+                </th>
+                <td class="Nomes">Bruno Mendonça</td>
+                <td class="Filmes">Intocáveis</td>
+                <td class="Filmes">Amnésia</td>
+                <td class="Filmes">Gladiador</td>
+            </tr>
+            <tr class="Homem">
+                <td class="Nomes">Daniel Lourenço</td>
+                <td class="Filmes">Wall-E</td>
+                <td class="Filmes">Oldboy</td>
+                <td class="Filmes">Dangal</td>
+            </tr>
+            <tr class="Homem">
+                <td class="Nomes">Fabiano Mota</td>
+                <td class="Filmes">Star Wars V</td>
+                <td class="Filmes">Taxi Driver</td>
+                <td class="Filmes">Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot class="Total">
+            <th colspan="4">
+                Total
+            </th>
+            <td>1000</td>
+        </tfoot>
+    </table>
+</body>
+</html>

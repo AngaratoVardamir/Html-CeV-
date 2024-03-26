@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #Corpo{
+            background-color: #232323;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #cdcdcd;
+        }
+        .vid{
+            width: 200px;
+            height: 112px;
+            background-color: rgb(156, 156, 156);
+            border: 2px solid black;
+            margin: 1px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sp{
+            display: flex;
+        }
+        #HTML{
+            background-image: url("imagens/thumb-html.png");
+        }
+        #JS{
+            background-image: url("imagens/thumb-js.png");
+        }
+        #HARDWARE{
+            background-image: url("imagens/thumb-hardware.png");
+        }
+        #PYTHON{
+            background-image: url("imagens/thumb-python.png");
+        }
+        a{
+            border: 1px solid #cdcdcd;
+            margin: 2px;
+        }
+        a:hover{
+            border: 1px solid #d47aeb;
+        }
+    </style>
+</head>
+<body id="Corpo">
+    <div>
+        <h2>Videos Legais para assistir</h2>
+        <span class="Col01 sp">
+            <a href="HTMLs/CursoHtml.html">
+                <div class="top1 vid" id="HTML">
+                </div>
+            </a>
+            <a href="HTMLs/CursoJs.html">
+                <div class="top1 vid" id="JS">
+                </div>
+            </a>
+        </span>
+        <span class="Col02 sp">
+            <a href="HTMLs/CursoHardware.html">
+                <div class="top2 vid" id="HARDWARE">
+                </div>
+            </a>
+            <a href="HTMLs/CursoPython.html">
+                <div class="top2 vid" id="PYTHON">
+                </div>
+            </a>
+        </span>
+    </div>
+</body>
+</html>

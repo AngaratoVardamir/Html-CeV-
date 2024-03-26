@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex22 F2</title>
+    <link rel="stylesheet" href="../Style.css">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: 34px;
+        }
+        h2{
+            font-size: 26px;
+        }
+        p{
+            font-size: 17px;
+        }
+        div{
+            background-color: #D3D3D3;
+            width: 582px;
+            height: 402px;
+            display: inline-block;
+            border: 1px solid black;
+        }
+        #Janum{
+            background-image: url('../imagens/pattern001.png');
+            background-repeat: repeat;
+        }
+        #Jando{background-image: url('../imagens/pattern002.png');
+        background-repeat: repeat-x;
+    }
+        #Jantr{background-image: url('../imagens/pattern003.png');
+        background-repeat: repeat-y;
+    }
+        #Janqu{background-image: url('../imagens/pattern004.png');
+        background-repeat: no-repeat;
+    }
+    </style>
+</head>
+<body>
+    <h1>Repetições em background-image</h1>
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
+    <div id="Janum"></div>
+    <h2>background-repeat: repeat-x;</h2>
+    <p>Repete apenas no eixo horizontal.</p>
+    <div id="Jando"></div>
+    <h2>background-repeat: repeat-y;</h2>
+    <p>Repete apenas no eixo vertical.</p>
+    <div id="Jantr"></div>
+    <h2>background-repeat: no-repeat;</h2>
+    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
+    <div id="Janqu"></div>
+</body>
+</html>
