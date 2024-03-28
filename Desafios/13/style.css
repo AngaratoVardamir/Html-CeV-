@@ -1,0 +1,65 @@
+html, body{
+    background-color: #232323;
+    height: 97vh;
+}
+body{
+    display: flex;
+    flex-direction: row;
+
+    background-image: url("pacote-d013/pacote-d013/imagens/fundo-madeira.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+div{
+    display: flex;
+    flex-direction: column;
+
+}
+#Celular-Fundo{
+    width: 90vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Celular{
+    position: relative;
+
+    width: 250px;
+    height: 500px;
+    background-image: url("pacote-d013/pacote-d013/imagens/frame-iphone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Icons{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Icons > a > img{
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 20px;
+
+    border: 7px solid rgb(228, 144, 253);
+}
+#Icons > a > img:hover{
+    width: 68px;
+    transition: .3s;
+    
+    border: 3px solid rgb(86, 255, 94);
+}
+iframe{
+    position: absolute;
+    height: 379px;
+    width: 220px;
+
+    top: 64px;
+    right: 16px;
+    cursor: pointer;
+}
