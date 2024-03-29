@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+:root{
+    --Cor01:#232323;
+    --Cor02:#cdcdcd;
+}
+
+header{
+    background-color: var(--Cor01);
+    color: var(--Cor02);
+    padding: 6%;
+    border: 2px solid rgba(171, 19, 231, 0.774);
+}
+header > h1{
+    font-size: 3.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header > p{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > p > strong{
+    margin-left: 10px;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    position: relative;
+    background-color: var(--Cor02);
+    color: var(--Cor01);
+    
+    height: 78vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    border: 2px solid rgba(171, 19, 231, 0.774);
+
+}
+div > p{
+    line-height: 40px;
+    width: 90%;
+    font-size: 1.5em;
+}
+.Div_Grande{
+    height: 110vh;
+}
+.Div_Grande > p{
+    margin-top: 30px;
+    line-height: 40px;
+    width: 90%;
+    font-size: 1.5em;
+}
+footer{
+    padding: 10px;
+    background-color: var(--Cor01);
+    color: var(--Cor02);
+    font-size: 1.2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Joninha{
+    background-image: url("pacote-d012/imagens/background001.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.Livro{
+    background-image: url("pacote-d012/imagens/background002.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.Imagem > p{
+    background-color: #232323a9;
+    color: #cdcdcd;
+
+    width: 310px;
+    position: absolute;
+    left: 6%;
+}
+a{
+    text-decoration: none;
+    color: var(--Cor02);
+}
