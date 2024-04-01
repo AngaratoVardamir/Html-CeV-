@@ -1,0 +1,193 @@
+@charset "utf-8";
+@font-face{
+    font-family: 'Tech';
+    src: url('Ativos/fontes/BebasNeue-Regular.ttf');
+}
+@font-face{
+    font-family: 'Robot';
+    src: url('Ativos/fontes/idroid.otf');
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(221, 185, 255);
+
+    min-height: 280px;
+    max-width: 1000px;
+    margin: auto;
+}
+header{
+    position: relative;
+
+    background-image: linear-gradient(to bottom, rgb(174, 0, 255), rgb(55, 0, 80));
+    color: #FFFFFF;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.712);
+}
+header > h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Tech';
+    text-align: center;
+    font-size: 40px;
+}
+header > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+
+}
+header > span > p{
+    
+    line-height: 1.5em;
+    
+}
+header > nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+header > nav > a{
+    width: 100%;
+    color: rgb(174, 0, 255);
+    font-size: 1.1em;
+    text-align: center;
+    text-decoration: none;
+
+    transition: 0.6s;
+    cursor: pointer;
+}
+header > nav > a:hover{
+    color: rgb(55, 0, 80);
+    background-color: rgb(174, 0, 255);
+}
+/*Main*/
+main{
+    position: relative;
+    
+    padding: 4%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.712);
+}
+strong{
+    background-color: rgba(174, 0, 255, 0.493);
+    color: rgb(70, 1, 102);
+}
+.Links1{
+    transition: 0.5s;
+}
+.Links1:hover{
+    background-color: rgba(252, 247, 0, 0.966);
+}
+.Links1 > a{
+    text-decoration: none;
+}
+.Links1 > a::after{
+    content: '\00A0\1F517';
+}
+main > h1{
+    color: rgb(55, 0, 80);
+    font-family: 'Robot';
+
+    font-size: 1.8em;
+}
+main > h2{
+    color: rgb(70, 1, 102);
+    background-image: linear-gradient(to right, rgba(174, 0, 255, 0.493), transparent);
+    font-family: 'Robot';
+
+    font-size: 1.2em;
+}
+main > p{
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+    margin: 15px 0px;
+}
+main > .imagens{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+#Video{
+    width: 100%;
+    margin: 10px 0px;
+}
+video{
+    width: 100%;
+    background-color: rgb(125, 0, 184);
+    padding: 1px;
+}
+#Artigo{
+    position: relative;
+    background-color: rgb(125, 0, 184);
+    padding: 6%;
+    border-radius: 4%;
+}
+#Borda{
+    position: relative;
+    height: 30px;
+}
+#Borda > p{
+    
+    color: #FFFFFF;
+
+    text-align: center;
+
+    font-size: 1.2em;
+    
+    width: 100%;
+}
+main > #Artigo > article{
+    background-color:rgb(180, 37, 247);
+    color: #FFFFFF;
+    padding: 20px;
+
+    border-radius: 4%;
+}
+main > #Artigo > article > ul{
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+}
+main > #Artigo > article > ul > li{
+    line-height: 1.5em;
+}
+main > #Artigo > article > p{
+    text-indent: 30px;
+    line-height: 2em;
+    margin: 15px 0px;
+}
+footer{
+    margin-top: 20px;
+    background-color: rgb(55, 0, 80);
+    text-align: center;
+    color: #FFFFFF;
+    padding: 4px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.712);
+}
+footer > strong > a{
+    color: #FFFFFF;
+    background-color: rgb(55, 0, 80);
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer > strong:hover > a{
+    color: rgba(252, 247, 0, 0.966);
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html, body{
+    background-color: #232323;
+    height: 100vh;
+}
+#Fundo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: blueviolet;
+    background-image: url("imagens/espaco.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 1s;
+}
+#Astronauta{
+    padding: 7%;
+}
+img{
+    width: 100%;
+}
